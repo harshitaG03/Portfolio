@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha384-...your-sha384-here..." crossorigin="anonymous">
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.jpg" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>B.Tech Student</p>
+                <h1>Hi, I'm <span>Harshita Garg</span> <br>From Haryana</h1>
+            </div>
+        </div>
+    </div>
+    <!----------- ABOUT ------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="p1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1><br>
+                    <p>Hello ! I'm Harshita Garg, a passionate and dedicated BTech student
+                        currently in my 3rd year at Banasthali Vidyapith. I love diving into
+                        the world of engineering and technology, exploring new ideas and learning
+                        every step of the way. This portfolio is a glimpse into my journey,
+                        showcasing my projects I've worked on, the things I've learned as
+                        I progress through my academic career. I am eager to apply my skills and
+                        knowledge to tackle real-world challenges, contributing to technological
+                        advancements and making a positive impact in society.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab(event, 'Education')">Education</p>
+                        
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Courses: </span><br>Data Structures & Algorithm,
+                                Object-Oriented Programming, Database Management system,
+                                Operating System</li>
+                            <li><span>Languages: </span><br>C, C++, HTML, CSS, JavaScript</li>
+                            <li><span>Tools: </span><br>VS code, Android Studio</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Aug 2021-May 2025 </span><br>
+                                Bachelor of Technology in Information Technology at Banasthali Vidyapith</li>
+                            <li><span>April 2019-March 2021</span><br>
+                                Class XII from Tagore Academy Public School</li>
+                            <li><span>April 2016-march 2019</span><br>
+                                Class X from P.D.P Senior Secondary School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------Portfolio---------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="worklist">
+                <div class="work">
+                    <img src="work.jpg">
+                    <div class="layer"><br>
+                        <h3>HostelBites</h3>
+                        <p>"Developed a comprehensive mess management system using Flutter, featuring user
+                            authentication for students and wardens. The app allows students to edit profiles, mark
+                            attendance, view meal menus, provide milk preferences, offer feedback, and receive
+                            notifications. Wardens can manage students, update meal menus, monitor attendance, track
+                            milk preferences, post notices, and review feedback, enhancing efficiency and communication
+                            in the mess environment."</p>
+                        <a href="https://github.com/harshitaG03/hostelbites"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="w2.jpg">
+                    <div class="layer"><br>
+                        <h3>Tour & Travel</h3>
+                        <p>"Experience the world through our eyes with our immersive tour and travel website. Discover
+                            breathtaking destinations, curated itineraries, and seamless booking experiences tailored to
+                            your wanderlust. Let us be your guide as you embark on unforgettable journeys, creating
+                            memories that last a lifetime."</p>
+                        <a href="Tour & Travel Website/"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------------Contact Us------------------------------ -->
+
+    <div id="contact">
+        <div class="container">
+            <form class="form">
+                <p id="heading"><i class="fa-solid fa-id-badge"></i>Contact Me</p>
+                <div class="field">
+                    <i class="fa-solid fa-user"></i>
+                    <input id="Name" placeholder="Your Name" class="input-field" type="text">
+                </div>
+                <div class="field">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    <input id="Email" placeholder="Your Email" class="input-field" type="text">
+                </div>
+                <div class="field">
+                    <i class="fa-solid fa-message"></i>
+                    <textarea name="Message" rows="6" class="input-field" placeholder="Your Message"></textarea>
+                </div>
+                <br>
+                <button type="submit" class="btn">Submit</button>
+                <br><br>
+                <p><i class="fa-solid fa-paper-plane"></i> garg03harshita@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 9991248204</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/har.xhita__?igsh=MTR4aW9kdmVmMjl5dg=="><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a
+                        href="https://www.linkedin.com/in/harshita-garg-626a6b2b0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                </div><br>
+                <a href="2116764_Harshita.pdf" download class="btn btn2"> Download CV</a>
+
+            </form>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Harshita Garg </p>
+        </div>
+    </div>
+</body>
+
+</html>
